@@ -257,10 +257,12 @@ img {
   row-gap: 2rem;
   text-align: center;
 }
-.skills__subtitle {
+.skills__subtitle 
+{
   margin-bottom: var(--mb-2);
 }
-.skills__text {
+.skills__text
+{
   margin-bottom: var(--mb-4);
 }
 .skills__data {
@@ -501,18 +503,23 @@ img {
                 transition: background 0.3s ease, transform 0.2s;
 }
 
-.resume
+.resume1
 {
-  margin-bottom: 10px;
-                        text-decoration: none;
-                        font-size: 16px;
-                        font-weight: bold;
-                        color: white;
-                        background-color: black;
-                        padding: 10px 20px;
-                        border-radius: 5px;
-                        display: inline-block;
-                        transition: background 0.3s ease, transform 0.2s;
+ 
+                    padding: 0.75rem 2.5rem;
+                    font-weight: var(--font-semi);
+                    border-radius: 5px; 
+                    border: 1px solid black; 
+                   
+                    width: fit-content;
+                    text-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    font-size: 16px;
+                     
+                    color: white;
+                    background: black;
+                    transition: background 0.3s ease, transform 0.2s;
 }
 
   /* Media query for mobile screens */
