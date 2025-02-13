@@ -506,8 +506,8 @@ img {
 .resume1
 {
  
-                    padding: 0.75rem 2.5rem;
-                    font-weight: var(--font-semi);
+                    padding: 10px;
+                
                     border-radius: 5px; 
                     border: 1px solid black; 
                    
