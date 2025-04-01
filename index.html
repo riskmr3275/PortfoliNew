@@ -184,17 +184,19 @@
             }
     
             @media (max-width: 768px) {
-                .skills-container {
-                    grid-template-columns: 1fr;
-                }
-                .pic {
-                    flex-direction: row;
-                }
-                .home__img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    .pic {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    .home__img {
+        width: 90%;
+        max-width: 300px;
+    }
+}
         </style>
     </head>
     <body>
@@ -252,24 +254,33 @@
                 </div>
 
                 <div class="pic">
+                    <!-- Social Links -->
                     <div class="home__social">
-                    <a href="https://www.linkedin.com/in/risu-gupta-28aa01230/"  target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://x.com/RISUGUPTA2" class="home__social-icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://github.com/riskmr3275" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
+                        <a href="https://www.linkedin.com/in/risu-gupta-28aa01230/" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://x.com/RISUGUPTA2" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="https://github.com/riskmr3275" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                
+                    <!-- Profile Image with SVG Mask -->
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                <path d="M9.19 145.96C34.02 76.58 114.86 54.73 184.11 29.48C245.80 6.98 311.86 -14.95 370.73 14.14C431.20 44.02 467.94 107.50 477.19 174.31C485.89 237.22 454.93 294.37 416.50 344.95C373.74 401.24 326.06 462.80 255.44 466.18C179.41 469.83 111.55 422.13 65.15 361.80C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
                             </mask>
                             <g mask="url(#mask0)">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                                <image xlink:href="assets/img/Gibli-removebg-preview.png" width="80%" height="100%" x="10%" y="10%"/>
+                                <path d="M9.19 145.96C34.02 76.58 114.86 54.73 184.11 29.48C245.80 6.98 311.86 -14.95 370.73 14.14C431.20 44.02 467.94 107.50 477.19 174.31C485.89 237.22 454.93 294.37 416.50 344.95C373.74 401.24 326.06 462.80 255.44 466.18C179.41 469.83 111.55 422.13 65.15 361.80C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+                                <image xlink:href="assets/img/Gibli-removebg-preview.png" width="80%" height="100%" x="10%" y="10%" alt="Profile Picture"/>
                             </g>
                         </svg>
                     </div>
                 </div>
+                
             </section>
 
             <!--===== ABOUT =====-->
