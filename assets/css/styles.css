@@ -542,3 +542,253 @@ img {
     flex-direction: row;
     row-gap: 1rem;
   }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.skills-section {
+   
+    border-radius: 8px;
+    
+}
+
+.section-title {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+     
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    color: #3498db;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap */
+    gap: 10px;
+    justify-content: center; /* Optional: Center items */
+}
+
+
+.skill-tag {
+    text-align: center;
+    flex: 1 1 ; /* Grow, shrink, and set a base width */
+   
+    background-color: #f1f9ff;
+    color: #2980b9;
+    border: 1px solid #bedcf0;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    min-width: 150px; /* Ensures responsiveness */
+}
+
+.skill-tag:hover {
+    background-color: #e1f0fa;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.proficiency-bars {
+    margin-top: 40px;
+}
+
+.proficiency-item {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill-level {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 4px;
+}
+
+.advanced {
+    width: 90%;
+}
+
+.proficient {
+    width: 80%;
+}
+
+.intermediate {
+    width: 65%;
+}
+
+.familiar {
+    width: 50%;
+}
+
+.open {
+    align-items: start;
+    background-color: #e1f5fe;
+    color: #0277bd;
+    padding: 8px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.resume1 {
+    display: inline-block;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.resume1:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work__img p {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    margin-bottom: 10px !important;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+.skills-container {
+grid-template-columns: 1fr;
+}
+.pic {
+flex-direction: row;
+align-items: center;
+text-align: center;
+}
+.home__img {
+width: 90%;
+max-width: 300px;
+}
+}
+
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+  width: 320px;
+  height: 350px;
+  padding: 20px;
+  color: white;
+/* Option 3: Ocean Blue */
+background: linear-gradient(#f5f9ff, #ebf5ff) padding-box,
+            linear-gradient(145deg, transparent 35%, #0066cc, #00aaff) border-box;
+            
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .main-content {
+  flex: 1;
+}
+
+.card .header span:first-child {
+  font-weight: 600;
+  color: #717171;
+  margin-right: 4px;
+}
+
+.card .heading {
+  font-size: 24px;
+  margin: 24px 0 16px;
+  font-weight: 600;
+}
+
+.card .categories {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.card .categories span {
+  background-color: #3498db;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-radius: 50em;
+}
+
+.card .footer {
+  font-weight: 600;
+  color: #717171;
+  margin-right: 4px;
+}
+
+.card:hover {
+  rotate: 8deg;
+}
